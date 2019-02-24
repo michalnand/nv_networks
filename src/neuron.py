@@ -26,7 +26,7 @@ class NUNeuron:
         self.state = state
 
 
-    def get_rc_output(self):
+    def get_activation(self):
         return self.y
 
     def get(self):
@@ -64,7 +64,7 @@ class NVNeuron:
         self.state = state
 
 
-    def get_rc_output(self):
+    def get_activation(self):
         return self.y
 
     def get(self):
