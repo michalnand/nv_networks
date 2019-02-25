@@ -19401,6 +19401,48 @@ W = angled&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="main_board">
+<description>Generated from &lt;b&gt;main_board.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs.ulp</description>
+<packages>
+<package name="ADAFRUIT_FIDUCIAL_1MM">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" stop="no" cream="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="-1" y="0" curve="90"/>
+<vertex x="0" y="-1" curve="90"/>
+<vertex x="1" y="0" curve="90"/>
+<vertex x="0" y="1" curve="90"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="ADAFRUIT_DOT">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADAFRUIT_FIDUCIAL">
+<description>For use by pick and place machines to calibrate the vision/machine, 1mm
+&lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADAFRUIT_DOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT_FIDUCIAL_1MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19488,6 +19530,16 @@ W = angled&lt;p&gt;
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
+<part name="C10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="100n"/>
+<part name="C11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:26137/1" value="100n"/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
+<part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="U$1" library="main_board" deviceset="ADAFRUIT_FIDUCIAL" device=""/>
+<part name="U$2" library="main_board" deviceset="ADAFRUIT_FIDUCIAL" device=""/>
+<part name="U$3" library="main_board" deviceset="ADAFRUIT_FIDUCIAL" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19577,6 +19629,16 @@ W = angled&lt;p&gt;
 <instance part="P+6" gate="VCC" x="281.94" y="124.46"/>
 <instance part="GND23" gate="1" x="276.86" y="86.36" rot="R270"/>
 <instance part="SV3" gate="1" x="342.9" y="96.52" rot="R180"/>
+<instance part="C10" gate="G$1" x="63.5" y="83.82"/>
+<instance part="C11" gate="G$1" x="55.88" y="83.82"/>
+<instance part="GND24" gate="1" x="63.5" y="66.04"/>
+<instance part="GND25" gate="1" x="55.88" y="66.04"/>
+<instance part="SV4" gate="1" x="342.9" y="25.4"/>
+<instance part="GND30" gate="1" x="353.06" y="15.24"/>
+<instance part="P+7" gate="VCC" x="353.06" y="33.02"/>
+<instance part="U$1" gate="G$1" x="88.9" y="149.86"/>
+<instance part="U$2" gate="G$1" x="88.9" y="139.7"/>
+<instance part="U$3" gate="G$1" x="88.9" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -19714,6 +19776,22 @@ W = angled&lt;p&gt;
 <pinref part="GND23" gate="1" pin="GND"/>
 <wire x1="287.02" y1="86.36" x2="279.4" y2="86.36" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="GND25" gate="1" pin="GND"/>
+<wire x1="55.88" y1="78.74" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="63.5" y1="78.74" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="1" pin="1"/>
+<wire x1="350.52" y1="20.32" x2="353.06" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="353.06" y1="20.32" x2="353.06" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -19764,6 +19842,13 @@ W = angled&lt;p&gt;
 <pinref part="C14" gate="G$1" pin="+"/>
 <wire x1="71.12" y1="86.36" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <junction x="71.12" y="96.52"/>
+<wire x1="71.12" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="96.52" x2="55.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="96.52" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="86.36" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<junction x="63.5" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
@@ -19792,6 +19877,12 @@ W = angled&lt;p&gt;
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <wire x1="281.94" y1="119.38" x2="281.94" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="1" pin="4"/>
+<wire x1="350.52" y1="27.94" x2="353.06" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="P+7" gate="VCC" pin="VCC"/>
+<wire x1="353.06" y1="27.94" x2="353.06" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -19944,11 +20035,6 @@ W = angled&lt;p&gt;
 <wire x1="195.58" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
 <label x="180.34" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="BIN1/BPHASE"/>
-<wire x1="287.02" y1="93.98" x2="274.32" y2="93.98" width="0.1524" layer="91"/>
-<label x="271.78" y="93.98" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="S0_OUT_1" class="0">
 <segment>
@@ -19969,11 +20055,6 @@ W = angled&lt;p&gt;
 <pinref part="U1" gate="G$1" pin="BIN2/BENBL"/>
 <wire x1="195.58" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
 <label x="180.34" y="91.44" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U2" gate="G$1" pin="BIN2/BENBL"/>
-<wire x1="287.02" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
-<label x="271.78" y="91.44" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -20025,6 +20106,16 @@ W = angled&lt;p&gt;
 <wire x1="287.02" y1="101.6" x2="274.32" y2="101.6" width="0.1524" layer="91"/>
 <label x="271.78" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="BIN1/BPHASE"/>
+<wire x1="287.02" y1="93.98" x2="274.32" y2="93.98" width="0.1524" layer="91"/>
+<label x="271.78" y="93.98" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="1" pin="3"/>
+<wire x1="350.52" y1="25.4" x2="360.68" y2="25.4" width="0.1524" layer="91"/>
+<label x="363.22" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="S1_OUT_1" class="0">
 <segment>
@@ -20040,6 +20131,16 @@ W = angled&lt;p&gt;
 <pinref part="U2" gate="G$1" pin="AIN2/AENBL"/>
 <wire x1="287.02" y1="99.06" x2="274.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="271.78" y="99.06" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="BIN2/BENBL"/>
+<wire x1="287.02" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
+<label x="271.78" y="91.44" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV4" gate="1" pin="2"/>
+<wire x1="350.52" y1="22.86" x2="360.68" y2="22.86" width="0.1524" layer="91"/>
+<label x="363.22" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_0" class="0">
