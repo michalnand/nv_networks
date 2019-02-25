@@ -19711,11 +19711,6 @@ Source: www.kingbright.com</description>
 <wire x1="180.34" y1="48.26" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 <label x="170.18" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="AIN1/PHASE"/>
-<wire x1="195.58" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="180.34" y="101.6" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -19764,11 +19759,6 @@ Source: www.kingbright.com</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="15.24" x2="172.72" y2="15.24" width="0.1524" layer="91"/>
 <label x="170.18" y="15.24" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="AIN2/AENBL"/>
-<wire x1="195.58" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="180.34" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -19820,11 +19810,6 @@ Source: www.kingbright.com</description>
 <wire x1="269.24" y1="48.26" x2="261.62" y2="48.26" width="0.1524" layer="91"/>
 <label x="259.08" y="48.26" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="BIN1/BPHASE"/>
-<wire x1="195.58" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="180.34" y="93.98" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="S0_OUT_1" class="0">
 <segment>
@@ -19840,11 +19825,6 @@ Source: www.kingbright.com</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="269.24" y1="15.24" x2="261.62" y2="15.24" width="0.1524" layer="91"/>
 <label x="259.08" y="15.24" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="BIN2/BENBL"/>
-<wire x1="195.58" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="180.34" y="91.44" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -20049,6 +20029,18 @@ Source: www.kingbright.com</description>
 <wire x1="190.5" y1="83.82" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="AIN1/PHASE"/>
+<wire x1="195.58" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="BIN1/BPHASE"/>
+<wire x1="195.58" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$36" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AOUT1"/>
@@ -20059,6 +20051,18 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="U1" gate="G$1" pin="BOUT1"/>
 <wire x1="231.14" y1="93.98" x2="243.84" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="BIN2/BENBL"/>
+<wire x1="195.58" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="AIN2/AENBL"/>
+<wire x1="195.58" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
