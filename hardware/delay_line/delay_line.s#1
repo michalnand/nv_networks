@@ -19858,12 +19858,6 @@ by exp-lbrs.ulp</description>
 <junction x="86.36" y="33.02"/>
 </segment>
 </net>
-<net name="B_OUT_0" class="0">
-<segment>
-<wire x1="198.12" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -20043,11 +20037,12 @@ by exp-lbrs.ulp</description>
 <pinref part="IC2" gate="A" pin="O"/>
 <wire x1="170.18" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="33.02" x2="185.42" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="30.48" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 <junction x="182.88" y="33.02"/>
 <wire x1="182.88" y1="33.02" x2="182.88" y2="43.18" width="0.1524" layer="91"/>
 <label x="182.88" y="45.72" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="BIN1/BPHASE"/>

@@ -20016,9 +20016,9 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="SV3" gate="1" pin="2"/>
 <wire x1="325.12" y1="27.94" x2="322.58" y2="27.94" width="0.1524" layer="91"/>
-<label x="317.5" y="25.4" size="1.778" layer="95" rot="R270"/>
+<label x="314.96" y="25.4" size="1.778" layer="95" rot="R270"/>
 <pinref part="SV3" gate="1" pin="3"/>
-<wire x1="322.58" y1="27.94" x2="317.5" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="27.94" x2="314.96" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="325.12" y1="25.4" x2="322.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="25.4" x2="322.58" y2="27.94" width="0.1524" layer="91"/>
 <junction x="322.58" y="27.94"/>

@@ -19589,7 +19589,7 @@ by exp-lbrs.ulp</description>
 <instance part="P+4" gate="VCC" x="53.34" y="35.56"/>
 <instance part="GND13" gate="1" x="53.34" y="10.16"/>
 <instance part="SV3" gate="1" x="332.74" y="25.4" rot="R180"/>
-<instance part="P+5" gate="VCC" x="322.58" y="40.64"/>
+<instance part="P+5" gate="VCC" x="322.58" y="45.72"/>
 <instance part="GND14" gate="1" x="322.58" y="10.16"/>
 </instances>
 <busses>
@@ -19767,7 +19767,7 @@ by exp-lbrs.ulp</description>
 <pinref part="SV3" gate="1" pin="1"/>
 <wire x1="325.12" y1="30.48" x2="322.58" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="322.58" y1="30.48" x2="322.58" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="30.48" x2="322.58" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">

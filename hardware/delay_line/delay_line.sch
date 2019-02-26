@@ -20027,9 +20027,9 @@ by exp-lbrs.ulp</description>
 <label x="119.38" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="AIN1/PHASE"/>
-<wire x1="195.58" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
-<label x="180.34" y="101.6" size="1.778" layer="95" rot="R180"/>
+<pinref part="U1" gate="G$1" pin="BIN1/BPHASE"/>
+<wire x1="195.58" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="180.34" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="OUT_1" class="0">
@@ -20045,9 +20045,9 @@ by exp-lbrs.ulp</description>
 <wire x1="198.12" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="BIN1/BPHASE"/>
-<wire x1="195.58" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="180.34" y="93.98" size="1.778" layer="95" rot="R180"/>
+<pinref part="U1" gate="G$1" pin="AIN1/PHASE"/>
+<wire x1="195.58" y1="101.6" x2="182.88" y2="101.6" width="0.1524" layer="91"/>
+<label x="180.34" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="OUT_2" class="0">
@@ -20063,9 +20063,9 @@ by exp-lbrs.ulp</description>
 <label x="243.84" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="AIN2/AENBL"/>
-<wire x1="195.58" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="180.34" y="99.06" size="1.778" layer="95" rot="R180"/>
+<pinref part="U1" gate="G$1" pin="BIN2/BENBL"/>
+<wire x1="195.58" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
+<label x="180.34" y="91.44" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="OUT_3" class="0">
@@ -20080,11 +20080,6 @@ by exp-lbrs.ulp</description>
 <label x="307.34" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="BIN2/BENBL"/>
-<wire x1="195.58" y1="91.44" x2="182.88" y2="91.44" width="0.1524" layer="91"/>
-<label x="180.34" y="91.44" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
 <pinref part="SV3" gate="1" pin="2"/>
 <wire x1="325.12" y1="27.94" x2="322.58" y2="27.94" width="0.1524" layer="91"/>
 <label x="314.96" y="25.4" size="1.778" layer="95" rot="R270"/>
@@ -20093,6 +20088,11 @@ by exp-lbrs.ulp</description>
 <wire x1="325.12" y1="25.4" x2="322.58" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="322.58" y1="25.4" x2="322.58" y2="27.94" width="0.1524" layer="91"/>
 <junction x="322.58" y="27.94"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="AIN2/AENBL"/>
+<wire x1="195.58" y1="99.06" x2="182.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="180.34" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
