@@ -22618,10 +22618,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
 <part name="R29" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
 <part name="VCC6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCCIO" device=""/>
-<part name="R30" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
-<part name="R31" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
-<part name="R32" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
-<part name="R33" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="M0805" package3d_urn="urn:adsk.eagle:package:26079/1" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -22753,10 +22749,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="R28" gate="G$1" x="200.66" y="-86.36"/>
 <instance part="R29" gate="G$1" x="187.96" y="-83.82"/>
 <instance part="VCC6" gate="G$1" x="180.34" y="-76.2"/>
-<instance part="R30" gate="G$1" x="292.1" y="-63.5"/>
-<instance part="R31" gate="G$1" x="292.1" y="-71.12"/>
-<instance part="R32" gate="G$1" x="292.1" y="-78.74"/>
-<instance part="R33" gate="G$1" x="292.1" y="-86.36"/>
 </instances>
 <busses>
 </busses>
@@ -23100,16 +23092,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="IC6" gate="P" pin="VCC"/>
 <wire x1="231.14" y1="-35.56" x2="231.14" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="195.58" y1="-86.36" x2="180.34" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="-86.36" x2="180.34" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="-83.82" x2="182.88" y2="-83.82" width="0.1524" layer="91"/>
-<pinref part="VCC6" gate="G$1" pin="VCCIO"/>
-<wire x1="180.34" y1="-78.74" x2="180.34" y2="-83.82" width="0.1524" layer="91"/>
-<junction x="180.34" y="-83.82"/>
-</segment>
 </net>
 <net name="N0" class="0">
 <segment>
@@ -23205,11 +23187,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="220.98" y1="-63.5" x2="205.74" y2="-63.5" width="0.1524" layer="91"/>
 <label x="203.2" y="-63.5" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="-63.5" x2="281.94" y2="-63.5" width="0.1524" layer="91"/>
-<label x="279.4" y="-63.5" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="N3" class="0">
 <segment>
@@ -23226,11 +23203,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="IC6" gate="A" pin="1A2"/>
 <wire x1="220.98" y1="-66.04" x2="205.74" y2="-66.04" width="0.1524" layer="91"/>
 <label x="203.2" y="-66.04" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="-71.12" x2="281.94" y2="-71.12" width="0.1524" layer="91"/>
-<label x="279.4" y="-71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N4" class="0">
@@ -23327,11 +23299,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="220.98" y1="-76.2" x2="205.74" y2="-76.2" width="0.1524" layer="91"/>
 <label x="203.2" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="-78.74" x2="281.94" y2="-78.74" width="0.1524" layer="91"/>
-<label x="279.4" y="-78.74" size="1.778" layer="95" rot="R180"/>
-</segment>
 </net>
 <net name="N7" class="0">
 <segment>
@@ -23348,11 +23315,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="IC6" gate="A" pin="2A2"/>
 <wire x1="220.98" y1="-78.74" x2="205.74" y2="-78.74" width="0.1524" layer="91"/>
 <label x="203.2" y="-78.74" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="-86.36" x2="281.94" y2="-86.36" width="0.1524" layer="91"/>
-<label x="279.4" y="-86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N5_SYNC" class="0">
@@ -23814,11 +23776,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="152.4" y1="53.34" x2="144.78" y2="53.34" width="0.1524" layer="91"/>
 <label x="144.78" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="-63.5" x2="302.26" y2="-63.5" width="0.1524" layer="91"/>
-<label x="304.8" y="-63.5" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N3_NON" class="0">
 <segment>
@@ -23842,11 +23799,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <junction x="152.4" y="45.72"/>
 <wire x1="152.4" y1="45.72" x2="144.78" y2="45.72" width="0.1524" layer="91"/>
 <label x="144.78" y="45.72" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="-71.12" x2="302.26" y2="-71.12" width="0.1524" layer="91"/>
-<label x="304.8" y="-71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N6_NON" class="0">
@@ -23872,11 +23824,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="149.86" y1="-27.94" x2="142.24" y2="-27.94" width="0.1524" layer="91"/>
 <label x="142.24" y="-27.94" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="-78.74" x2="302.26" y2="-78.74" width="0.1524" layer="91"/>
-<label x="304.8" y="-78.74" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N7_NON" class="0">
 <segment>
@@ -23901,11 +23848,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="149.86" y1="-35.56" x2="142.24" y2="-35.56" width="0.1524" layer="91"/>
 <label x="142.24" y="-35.56" size="1.778" layer="95" rot="R180"/>
 </segment>
-<segment>
-<pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="-86.36" x2="302.26" y2="-86.36" width="0.1524" layer="91"/>
-<label x="304.8" y="-86.36" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -23927,6 +23869,15 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="-83.82" x2="208.28" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="208.28" y="-83.82"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="-86.36" x2="180.34" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="-86.36" x2="180.34" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="-83.82" x2="182.88" y2="-83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
